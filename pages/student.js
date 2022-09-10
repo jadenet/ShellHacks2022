@@ -42,81 +42,92 @@ export default function Student() {
 
     return (
         <Container>
-            <Typography variant="h5" color="initial" mb="3rem">Which subjects would you like to be mentored on?</Typography>
-            <Stack direction="row" justifyContent="space-evenly" spacing={4} mb="3rem">
-                <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
-                    <Typography variant="h6" color="initial" mb=".5rem">Education</Typography>
-                    <FormGroup>
-                        {["Math", "Science", "English", "Other"].map((name, id) =>
-                            <FormControlLabel
-                                label={name}
-                                control={
-                                    <Checkbox
-                                        value={name}
-                                        onChange={updateSelected}
-                                        color="primary"
-                                    />
-                                }
-                            />
-                        )}
-                    </FormGroup>
-                </Box>
+            <Container maxWidth="lg">
+                <Typography variant="h5" color="initial" my="3rem">1. What's your name?</Typography>
+                <TextField
+                    id="name"
+                    label="Enter name"
+                />
+            </Container>
 
-                <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
-                    <Typography variant="h6" color="initial" mb=".5rem">Finance</Typography>
-                    <FormGroup>
-                        {["Something1", "Something2", "Something3", "Other"].map((name, id) =>
-                            <FormControlLabel
-                                label={name}
-                                control={
-                                    <Checkbox
-                                        value={name}
-                                        onChange={updateSelected}
-                                        color="primary"
-                                    />
-                                }
-                            />
-                        )}
-                    </FormGroup>
-                </Box>
+            <Container maxWidth="lg">
+                <Typography variant="h5" color="initial" my="3rem">2. Which subjects would you like to be mentored on?</Typography>
+                <Stack direction="row" justifyContent="space-evenly" spacing={4} mb="3rem">
+                    <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
+                        <Typography variant="h6" color="initial" mb=".5rem">Education</Typography>
+                        <FormGroup>
+                            {["Math", "Science", "English", "Other"].map((name, id) =>
+                                <FormControlLabel
+                                    label={name}
+                                    control={
+                                        <Checkbox
+                                            value={name}
+                                            onChange={updateSelected}
+                                            color="primary"
+                                        />
+                                    }
+                                />
+                            )}
+                        </FormGroup>
+                    </Box>
 
-                <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
-                    <Typography variant="h6" color="initial" mb=".5rem">Life skills</Typography>
-                    <FormGroup>
-                        {["Something1", "Something2", "Something3", "Other"].map((name, id) =>
-                            <FormControlLabel
-                                label={name}
-                                control={
-                                    <Checkbox
-                                        value={name}
-                                        onChange={updateSelected}
-                                        color="primary"
-                                    />
-                                }
-                            />
-                        )}
-                    </FormGroup>
-                </Box>
+                    <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
+                        <Typography variant="h6" color="initial" mb=".5rem">Finance</Typography>
+                        <FormGroup>
+                            {["Something1", "Something2", "Something3", "Other"].map((name, id) =>
+                                <FormControlLabel
+                                    label={name}
+                                    control={
+                                        <Checkbox
+                                            value={name}
+                                            onChange={updateSelected}
+                                            color="primary"
+                                        />
+                                    }
+                                />
+                            )}
+                        </FormGroup>
+                    </Box>
 
-                <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
-                    <Typography variant="h6" color="initial" mb=".5rem">Health</Typography>
-                    <FormGroup>
-                        {["Something1", "Something2", "Something3", "Other"].map((name, id) =>
-                            <FormControlLabel
-                                label={name}
-                                control={
-                                    <Checkbox
-                                        value={name}
-                                        onChange={updateSelected}
-                                        color="primary"
-                                    />
-                                }
-                            />
-                        )}
-                    </FormGroup>
-                </Box>
-            </Stack>
-            <Typography variant="h6" color="initial" mb="2rem">Current selections: {selected === [] ? "None" : selected.toString()}</Typography>
+                    <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
+                        <Typography variant="h6" color="initial" mb=".5rem">Life skills</Typography>
+                        <FormGroup>
+                            {["Something1", "Something2", "Something3", "Other"].map((name, id) =>
+                                <FormControlLabel
+                                    label={name}
+                                    control={
+                                        <Checkbox
+                                            value={name}
+                                            onChange={updateSelected}
+                                            color="primary"
+                                        />
+                                    }
+                                />
+                            )}
+                        </FormGroup>
+                    </Box>
+
+                    <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
+                        <Typography variant="h6" color="initial" mb=".5rem">Health</Typography>
+                        <FormGroup>
+                            {["Something1", "Something2", "Something3", "Other"].map((name, id) =>
+                                <FormControlLabel
+                                    label={name}
+                                    control={
+                                        <Checkbox
+                                            value={name}
+                                            onChange={updateSelected}
+                                            color="primary"
+                                        />
+                                    }
+                                />
+                            )}
+                        </FormGroup>
+                    </Box>
+                </Stack>
+                <Typography variant="h6" color="initial" mb="2rem">Current selections: {selected.length === 0 ? "None" : selected.toString()}</Typography>
+            </Container>
+
             <Button variant="contained" color="primary" size="medium">Done</Button>
         </Container>
     )
