@@ -5,20 +5,7 @@ export default function Student() {
     const [selected, setSelected] = useState([])
 
     function updateSelected(e) {
-        if (e.target.parentElement.label === "Other") {
-            if (e.target.checked) {
-                console.log('good');
-                <TextField
-                    id="other"
-                    label="Enter here"
-                    varient="outlined"
-                />
-            } else {
-
-            }
-        }
-
-        else if (e.target.checked) {
+        if (e.target.checked) {
             if (selected.length === 0) {
                 setSelected([e.target.value])
             } else {
