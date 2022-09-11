@@ -32,7 +32,7 @@ export default function Student() {
 
             <Container maxWidth="lg">
                 <Typography variant="h5" color="initial" mt="3rem" mb="1rem">3. What's your phone number?</Typography>
-                <TextField id="phone number" label="Enter phone number" sx={{borderRadius: "1rem", backgroundColor: "white", boxShadow: "0 4px 8px 0 rbga(0, 0, 0, .2)"}} />
+                <TextField id="phone number" label="Enter phone number" sx={{backgroundColor: "white", boxShadow: "0 4px 8px 0 rbga(0, 0, 0, .2)"}} />
             </Container>
 
             <Container maxWidth="lg">
