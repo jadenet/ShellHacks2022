@@ -47,7 +47,7 @@ export default function Student() {
                     <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Education</Typography>
                         <FormGroup>
-                            {["Math", "Science", "English", "Other"].map((name, id) =>
+                            {["Math", "Science", "English"].map((name, id) =>
                                 <FormControlLabel
                                     label={name}
                                     control={
@@ -65,7 +65,7 @@ export default function Student() {
                     <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Finance</Typography>
                         <FormGroup>
-                            {["Something1", "Something2", "Something3", "Other"].map((name, id) =>
+                            {["Something1", "Something2", "Something3"].map((name, id) =>
                                 <FormControlLabel
                                     label={name}
                                     control={
@@ -83,7 +83,7 @@ export default function Student() {
                     <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Life skills</Typography>
                         <FormGroup>
-                            {["Something1", "Something2", "Something3", "Other"].map((name, id) =>
+                            {["Something1", "Something2", "Something3"].map((name, id) =>
                                 <FormControlLabel
                                     label={name}
                                     control={
@@ -101,7 +101,7 @@ export default function Student() {
                     <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Health</Typography>
                         <FormGroup>
-                            {["Something1", "Something2", "Something3", "Other"].map((name, id) =>
+                            {["Something1", "Something2", "Something3"].map((name, id) =>
                                 <FormControlLabel
                                     label={name}
                                     control={
@@ -119,7 +119,7 @@ export default function Student() {
                 <Typography variant="h6" color="initial" mb="2rem">Current selections: {selected.length === 0 ? "None" : selected.toString()}</Typography>
             </Container>
 
-            <Button variant="contained" color="primary" size="medium">Done</Button>
+            <Button variant="contained" color="primary" size="medium" href="/student-dashboard">Done</Button>
         </Container>
     )
 }
