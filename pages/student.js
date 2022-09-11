@@ -103,7 +103,7 @@ export default function Student() {
                 <Typography variant="h6" color="initial">Current selections: {selected.length === 0 ? "None" : selected.toString()}</Typography>
             </Container>
 
-            <Button variant="contained" href="/student-dashboard" sx={{ margin: "1.5rem", backgroundColor: "turquoise", borderRadius: "1rem" }}>Done</Button>
+            <Button variant="contained" href={`/student/${encodeURIComponent(selected)}`} sx={{ margin: "1.5rem", backgroundColor: "turquoise", borderRadius: "1rem" }}>Done</Button>
         </Container>
     )
 }
