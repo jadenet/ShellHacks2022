@@ -27,7 +27,7 @@ export default function Student() {
 
             <Container maxWidth="lg">
                 <Typography variant="h5" color="initial" mt="3rem" mb="1rem">2. Which subjects would you like to be mentored on?</Typography>
-                <Stack direction="row" justifyContent="space-evenly" spacing={4} mb="2rem">
+                <Stack direction="row" justifyContent="space-evenly" spacing={4} mb="1rem">
                     <Box p="2rem" backgroundColor="white" borderRadius="1rem" flexGrow={1} sx={{ boxShadow: "0 4px 8px 0 rbga(0, 0, 0, .2)" }}>
                         <Typography variant="h6" color="initial" mb=".5rem">Education</Typography>
                         <FormGroup>
