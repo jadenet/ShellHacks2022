@@ -21,7 +21,7 @@ export default function Student() {
     return (
         <Container>
             <Container maxWidth="lg">
-                <Typography variant="h5" color="initial" my="3rem">1. What's your name?</Typography>
+                <Typography variant="h5" color="initial"  mt="3rem" mb="1rem">1. What's your name?</Typography>
                 <TextField
                     id="name"
                     label="Enter name"
@@ -29,8 +29,8 @@ export default function Student() {
             </Container>
 
             <Container maxWidth="lg">
-                <Typography variant="h5" color="initial" my="3rem">2. Which subjects would you like to be mentored on?</Typography>
-                <Stack direction="row" justifyContent="space-evenly" spacing={4} mb="3rem">
+                <Typography variant="h5" color="initial" mt="3rem" mb="1rem">2. Which subjects would you like to be mentored on?</Typography>
+                <Stack direction="row" justifyContent="space-evenly" spacing={4} mb="2rem">
                     <Box p="3rem" backgroundColor="white" borderRadius="2rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Education</Typography>
                         <FormGroup>
