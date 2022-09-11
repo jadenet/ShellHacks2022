@@ -113,7 +113,7 @@ export default function Student() {
                 <Typography variant="h6" color="initial">Current selections: {selected.length === 0 ? "None" : selected.toString()}</Typography>
             </Container>
 
-            <Button variant="contained" size="medium" href="/mentor-dashboard" sx={{ margin: "2rem" }}>Done</Button>
+            <Button variant="contained" size="medium" href="/mentor-dashboard" sx={{ margin: "1.5rem", backgroundColor: "turquoise", borderRadius: "1rem" }}>Done</Button>
         </Container>
     )
 }
