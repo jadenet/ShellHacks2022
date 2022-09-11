@@ -22,10 +22,7 @@ export default function Student() {
         <Container>
             <Container maxWidth="lg">
                 <Typography variant="h5" color="initial"  mt="3rem" mb="1rem">1. What's your name?</Typography>
-                <TextField
-                    id="name"
-                    label="Enter name"
-                />
+                <TextField id="name" label="Enter name" sx={{backgroundColor: "white", boxShadow: "0 4px 8px 0 rbga(0, 0, 0, .2)"}} />
             </Container>
 
             <Container maxWidth="lg">
@@ -103,10 +100,10 @@ export default function Student() {
                         </FormGroup>
                     </Box>
                 </Stack>
-                <Typography variant="h6" color="initial" mb="2rem">Current selections: {selected.length === 0 ? "None" : selected.toString()}</Typography>
+                <Typography variant="h6" color="initial">Current selections: {selected.length === 0 ? "None" : selected.toString()}</Typography>
             </Container>
 
-            <Button variant="contained" color="primary" size="medium" href="/student-dashboard">Done</Button>
+            <Button variant="contained" color="primary" size="medium" href="/student-dashboard"  sx={{margin: "2rem"}}>Done</Button>
         </Container>
     )
 }

@@ -6,6 +6,7 @@ export default function About() {
             <Typography variant="h4" textAlign="center" fontWeight="bolder" mb="1rem">About</Typography>
             <Typography variant="body1" textAlign="center" px="10rem">
                 MentorMe is a startup company who aims to connect foster students to mentors.
+                Mentors can help the students in different aspects of life such as education, health, and finance.
             </Typography>
         </Box>
     )
