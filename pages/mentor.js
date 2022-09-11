@@ -31,23 +31,20 @@ export default function Student() {
             <Container maxWidth="lg">
                 <Typography variant="h5" color="initial" my="3rem">2. What's your email?</Typography>
                 <TextField
-                    id="name"
-                    label="Enter name"
+                    id="email"
+                    label="Enter email"
                 />
             </Container>
 
             <Container maxWidth="lg">
                 <Typography variant="h5" color="initial" my="3rem">3. What's your phone number?</Typography>
-                <TextField
-                    id="name"
-                    label="Enter name"
-                />
+                <TextField id="phone number" label="Enter phone number" />
             </Container>
 
             <Container maxWidth="lg">
                 <Typography variant="h5" color="initial" my="3rem">4. Which subjects are you specialized in?</Typography>
                 <Stack direction="row" justifyContent="space-evenly" spacing={4} mb="3rem">
-                    <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
+                    <Box p="3rem" backgroundColor="white" borderRadius="2rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Education</Typography>
                         <FormGroup>
                             {["Math", "Science", "English"].map((name, id) =>
@@ -65,7 +62,7 @@ export default function Student() {
                         </FormGroup>
                     </Box>
 
-                    <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
+                    <Box p="3rem" backgroundColor="white" borderRadius="2rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Finance</Typography>
                         <FormGroup>
                             {["Budgeting", "Money Management", "Financial Literacy"].map((name, id) =>
@@ -83,7 +80,7 @@ export default function Student() {
                         </FormGroup>
                     </Box>
 
-                    <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
+                    <Box p="3rem" backgroundColor="white" borderRadius="2rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Life skills</Typography>
                         <FormGroup>
                             {["Driving", "Cooking", "Job skills"].map((name, id) =>
@@ -101,7 +98,7 @@ export default function Student() {
                         </FormGroup>
                     </Box>
 
-                    <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
+                    <Box p="3rem" backgroundColor="white" borderRadius="2rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Health</Typography>
                         <FormGroup>
                             {["Exercise", "Nutrition", "Mental Health"].map((name, id) =>
