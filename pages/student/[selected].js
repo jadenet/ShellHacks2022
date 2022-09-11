@@ -43,7 +43,7 @@ export default function Student() {
 
     return (
         <Box>
-            <Typography variant="h4" fontWeight="bolder" textAlign="center" pt="2rem">Mentors for you</Typography>
+            <Typography variant="h5" fontWeight="bolder" textAlign="center" pt="2rem">Mentors for you</Typography>
 
             <Box p="10rem" pt="2rem" m="0" display="flex" rowGap="2rem" flexWrap="wrap" sx={{ justifyContent: "space-evenly" }}>
                 {mentorInfo.map((mentor) => {
