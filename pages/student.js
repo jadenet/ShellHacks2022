@@ -44,7 +44,7 @@ export default function Student() {
             <Container maxWidth="lg">
                 <Typography variant="h5" color="initial" my="3rem">2. Which subjects would you like to be mentored on?</Typography>
                 <Stack direction="row" justifyContent="space-evenly" spacing={4} mb="3rem">
-                    <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
+                    <Box p="3rem" backgroundColor="white" borderRadius="2rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Education</Typography>
                         <FormGroup>
                             {["Math", "Science", "English"].map((name, id) =>
@@ -62,7 +62,7 @@ export default function Student() {
                         </FormGroup>
                     </Box>
 
-                    <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
+                    <Box p="3rem" backgroundColor="white" borderRadius="2rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Finance</Typography>
                         <FormGroup>
                             {["Budgeting", "Money Management", "Financial Literacy"].map((name, id) =>
@@ -80,7 +80,7 @@ export default function Student() {
                         </FormGroup>
                     </Box>
 
-                    <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
+                    <Box p="3rem" backgroundColor="white" borderRadius="2rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Life skills</Typography>
                         <FormGroup>
                             {["Driving", "Cooking", "Job skills"].map((name, id) =>
@@ -98,7 +98,7 @@ export default function Student() {
                         </FormGroup>
                     </Box>
 
-                    <Box p="3rem" backgroundColor="lightblue" borderRadius="2rem" flexGrow={1}>
+                    <Box p="3rem" backgroundColor="white" borderRadius="2rem" flexGrow={1} sx={{boxShadow: "0 4px 8px 0 rbga(0, 0, 0, .2)"}}>
                         <Typography variant="h6" color="initial" mb=".5rem">Health</Typography>
                         <FormGroup>
                             {["Exercise", "Nutrition", "Mental Health"].map((name, id) =>
