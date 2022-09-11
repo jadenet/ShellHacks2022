@@ -32,13 +32,13 @@ export default function Student() {
 
             <Container maxWidth="lg">
                 <Typography variant="h5" color="initial" mt="3rem" mb="1rem">3. What's your phone number?</Typography>
-                <TextField id="phone number" label="Enter phone number" sx={{backgroundColor: "white", boxShadow: "0 4px 8px 0 rbga(0, 0, 0, .2)"}} />
+                <TextField id="phone number" label="Enter phone number" sx={{borderRadius: "1rem", backgroundColor: "white", boxShadow: "0 4px 8px 0 rbga(0, 0, 0, .2)"}} />
             </Container>
 
             <Container maxWidth="lg">
                 <Typography variant="h5" color="initial" mt="3rem" mb="1rem">4. Which subjects are you specialized in?</Typography>
                 <Stack direction="row" justifyContent="space-evenly" spacing={4} mb="2rem">
-                    <Box p="3rem" backgroundColor="white" borderRadius="2rem" flexGrow={1}>
+                    <Box p="3rem" backgroundColor="white" borderRadius="1rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Education</Typography>
                         <FormGroup>
                             {["Math", "Science", "English"].map((name, id) =>
@@ -56,7 +56,7 @@ export default function Student() {
                         </FormGroup>
                     </Box>
 
-                    <Box p="3rem" backgroundColor="white" borderRadius="2rem" flexGrow={1}>
+                    <Box p="3rem" backgroundColor="white" borderRadius="1rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Finance</Typography>
                         <FormGroup>
                             {["Budgeting", "Money Management", "Financial Literacy"].map((name, id) =>
@@ -74,7 +74,7 @@ export default function Student() {
                         </FormGroup>
                     </Box>
 
-                    <Box p="3rem" backgroundColor="white" borderRadius="2rem" flexGrow={1}>
+                    <Box p="3rem" backgroundColor="white" borderRadius="1rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Life skills</Typography>
                         <FormGroup>
                             {["Driving", "Cooking", "Job skills"].map((name, id) =>
@@ -92,7 +92,7 @@ export default function Student() {
                         </FormGroup>
                     </Box>
 
-                    <Box p="3rem" backgroundColor="white" borderRadius="2rem" flexGrow={1}>
+                    <Box p="3rem" backgroundColor="white" borderRadius="1rem" flexGrow={1}>
                         <Typography variant="h6" color="initial" mb=".5rem">Health</Typography>
                         <FormGroup>
                             {["Exercise", "Nutrition", "Mental Health"].map((name, id) =>
@@ -113,7 +113,7 @@ export default function Student() {
                 <Typography variant="h6" color="initial">Current selections: {selected.length === 0 ? "None" : selected.toString()}</Typography>
             </Container>
 
-            <Button variant="contained" color="primary" size="medium" href="/mentor-dashboard" sx={{margin: "2rem"}}>Done</Button>
+            <Button variant="contained" size="medium" href="/mentor-dashboard" sx={{margin: "2rem"}}>Done</Button>
         </Container>
     )
 }
