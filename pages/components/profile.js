@@ -7,7 +7,7 @@ export default function Profile(props) {
             <Typography variant='h4' pt="1.5rem" pb=".5rem" fontWeight="bold">{props.name}</Typography>
             <Typography color="gray" fontSize="1rem">{props.job}</Typography>
             <Typography fontSize=".85rem" height="9.5rem" py="1rem">{props.description}</Typography>
-            <Link width="100%" fontSize="18px" curser="pointer" textAlign="center" borderRadius="1rem" p=".5rem" href={`mailto: ${props.email}`} sx={{color: "white", backgroundColor: "black"}}>Contact</Link>
+            <Link width="100%" fontSize="18px" curser="pointer" textAlign="center" borderRadius="1rem" p=".5rem" href={`mailto: ${props.email}`} sx={{ color: "white", backgroundColor: "black" }}>Contact</Link>
         </Box>
     )
 }
