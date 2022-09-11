@@ -35,7 +35,7 @@ export default function Student() {
         {
             name: "Warren Coleman",
             job: "Health Specialist",
-            description: "My job as a Health Specialist is to improve a person's wellbeing so that they can succeed. I teach various subjects that focuses on both physical and meantal health.",
+            description: "My job as a Health Specialist is to improve a person's wellbeing so that they can succeed. I teach various subjects that focuses on both physical and mental health.",
             email: "warrencoleman_mentor@gmail.com",
             courses: ["Exercise", "Nutrition", "Mental Health"]
         }
