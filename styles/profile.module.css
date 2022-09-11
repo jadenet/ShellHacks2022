@@ -1,14 +1,6 @@
-.main {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  background-image: url("https://wallpaperaccess.com/full/93391.jpg");
-}
-
 .body {
   padding: 10rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   margin: 0;
 }
 
