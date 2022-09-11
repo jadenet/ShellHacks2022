@@ -1,14 +1,5 @@
-import Container from "@mui/material/Container"
-import Stack from "@mui/material/Stack"
-import Typography from '@mui/material/Typography'
-import Button from '@mui/material/Button'
+import { Container, Stack, Typography, Button, FormGroup, FormControlLabel, Checkbox, Box, TextField } from "@mui/material"
 import { useState } from 'react'
-import FormGroup from '@mui/material/FormGroup'
-import FormControlLabel from '@mui/material/FormControlLabel'
-import Checkbox from '@mui/material/Checkbox'
-import Box from '@mui/material/Box'
-import Paper from '@mui/material/Paper'
-import TextField from '@mui/material/TextField'
 
 export default function Student() {
     const [selected, setSelected] = useState([])

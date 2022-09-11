@@ -1,14 +1,10 @@
-import styles from '../../styles/Option.module.css'
+import { Typography, Link } from '@mui/material'
 
 export default function Option(props) {
     return (
-        <a href={props.link} className={styles.wrapper} style={{ backgroundColor: props.color }}>
-            <h1 className={styles.title}>
-                {props.text}
-            </h1>
-            <p className={styles.description}>
-                Login here
-            </p>
-        </a>
+        <Link href={props.link} underline="hover" width="25rem" height="100%" display="flex" sx={{flexFlow: "column", justifyContent: "center"}} borderRadius="3rem" pt="1rem" boxShadow="0 1rem 2rem 0 rgba(0, 0, 0, .1)" style={{ backgroundColor: props.color }}>
+            <Typography variant="h3" color="white" fontWeight="bolder" textAlign="center">{props.text}</Typography>
+            <Typography variant="subtitle1" color="white" textAlign="center">Sign up</Typography>
+        </Link>
     )
 }
